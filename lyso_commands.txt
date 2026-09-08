@@ -1,0 +1,15 @@
+
+  135  cd Documentos/
+  136  ls
+  137  cd sistemas/
+  138  cd lyso_water/
+  139  clear
+  140  grep -v HOH 1aki.pdb.gz > 1aki_clean.pdb
+  141  grep -v HOH 1aki.pdb > 1aki_clean.pdb
+  142  clear
+  143  gmx pdb2gmx -f 1aki_clean.pdb -o 1aki_processed.gro -water tip3p
+  144  gmx pdb2gmx -f 1aki.pdb.gz -o 1aki_processed.gro -water tip3p
+  145  gmx pdb2gmx -f 1aki_clean.pdb -o 1aki_processed.gro -water tip3p
+  146  gmx pdb2gmx -f 1aki.pdb.gz -o 1aki_processed.gro -water tip3p
+  147  ls
+  148  history > lyso_commands.txt
