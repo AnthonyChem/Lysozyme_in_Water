@@ -18668,11 +18668,9 @@ Protein_chain_A     3
 
 [ system ]
 ; Name
-LYSOZYME in water
+LYSOZYME
 
 [ molecules ]
 ; Compound        #mols
 Protein_chain_A     1
 SOL                78
-SOL         14749
-CL               8
